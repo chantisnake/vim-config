@@ -20,8 +20,8 @@ imap kk <Esc>
 imap vv <Esc>v
 
 " when changing indentation, do not vanish the visual block
-vmap > >gv
-vmap < <gv
+vmap > ><ESC>vgv
+vmap < <<ESC>vgv
 
 " use u and U to exits visual mode,
 " because I never use convert to lower or upper case anyway
