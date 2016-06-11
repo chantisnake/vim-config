@@ -63,7 +63,7 @@ set softtabstop=4
 set spell
 
 " map leader to comma
-let mapleader=","
+let mapleader=" "
 
 " save when lost focus or switch tab
 set autowrite
