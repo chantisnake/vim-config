@@ -1,14 +1,20 @@
 filetype off                  " required
 set nocompatible              " be iMproved, required
 
+if has('win32')
+    let $DOTVIM='$USERPROFILE/vimfiles/'
+else
+    let $DOTVIM='$USERPROFILE/.vim/'
+endif
+
 " open syntax highlighting
 syntax on
 filetype plugin on    " required
 filetype indent on 
 
 " set the runtime path to include Vundle and initialize
-set rtp+=$HOME/vimfiles/bundle/Vundle.vim/ 
-call vundle#begin('$USERPROFILE/vimfiles/bundle/')
+set rtp+=$DOTVIM/bundle/Vundle.vim/ 
+call vundle#begin('$DOTVIM/bundle/')
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 
@@ -253,4 +259,4 @@ set rop=type:directx,gamma:1.0,contrast:0.5,level:1,geom:1,renmode:4,taamode:1
 
 
 " source the general file
-source ~/vimfiles/general_vim_config.vim
+source $DOTVIM/general_vim_config.vim
