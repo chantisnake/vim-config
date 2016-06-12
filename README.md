@@ -37,8 +37,6 @@ source ~/vimfiles/idea_vim_config.vim
 #### 3. install plugins
 you need to first install [vundle](https://github.com/VundleVim/Vundle.vim).
 
-By default this should have already been installed, if it doesn't work you need to delete `~/vimfiles/bundle/Vundle.vim` folder.
-
 Then run 
 
 ```bash
