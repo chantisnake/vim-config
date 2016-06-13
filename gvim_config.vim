@@ -205,7 +205,7 @@ colorscheme focuspoint
 if has('win32')
     set guifont=Consolas:h10:cANSI
 else
-    set guifont=Monospace 10
+    set guifont=DejaVu\ Sans\ Mono\ 11
 endif    
     
 " hide tool bar
