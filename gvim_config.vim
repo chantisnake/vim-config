@@ -4,7 +4,7 @@ set nocompatible              " be iMproved, required
 if has('win32')
     let $DOTVIM='$USERPROFILE/vimfiles/'
 else
-    let $DOTVIM='$USERPROFILE/.vim/'
+    let $DOTVIM='~/.vim/'
 endif
 
 " open syntax highlighting
