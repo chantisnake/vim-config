@@ -44,10 +44,8 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'chase/focuspoint-vim'
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'rdolgushin/gitignore.vim'
-Plugin 'vim-pandoc/vim-pandoc'
-Plugin 'vim-pandoc/vim-pandoc-syntax' 
-Plugin 'vim-pandoc/vim-rmarkdown'
 Plugin 'easymotion/vim-easymotion'
+Plugin 'ryanoasis/vim-devicons'
 
 
 " All of your Plugins must be added before the following line
