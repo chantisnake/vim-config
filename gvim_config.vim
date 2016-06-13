@@ -202,7 +202,12 @@ imap <C-;> <Esc>[s1z=`]a
 " color scheme
 colorscheme focuspoint 
 " font
-set guifont=Consolas:h10:cANSI
+if has('win32')
+    set guifont=Consolas:h10:cANSI
+else
+    set guifont=Monospace 10
+endif    
+    
 " hide tool bar
 :set guioptions-=m  "remove menu bar
 :set guioptions-=T  "remove toolbar
