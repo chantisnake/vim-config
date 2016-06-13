@@ -5,9 +5,18 @@ This is a my vim configuration file, mainly focus on the experience of latex, ma
 I don't see why you need to use my key binding, but anyway...
 
 ### one liner:
+windows:
 ```powershell
 iex (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/chantisnake/vim-config/master/setup.ps1')
 ```
+
+Linux:
+```bash
+sh -c "$(wget https://raw.githubusercontent.com/chantisnake/vim-config/master/setup.sh -O -)"
+```
+
+You need to manually setup `.ideavimrc` in linux
+
 
 ### manual
 
