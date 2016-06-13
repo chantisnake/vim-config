@@ -258,8 +258,9 @@ endfunction command! PluginRefreshUpdate call RefreshPluginsWithUpdate()
 :set fileencoding=utf-8
 
 " use direct-x render
-set rop=type:directx,gamma:1.0,contrast:0.5,level:1,geom:1,renmode:4,taamode:1
-
+if has('win32')
+    set rop=type:directx,gamma:1.0,contrast:0.5,level:1,geom:1,renmode:4,taamode:1
+endif
 
 " source the general file
 source $DOTVIM/general_vim_config.vim
