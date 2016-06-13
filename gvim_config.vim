@@ -45,7 +45,6 @@ Plugin 'chase/focuspoint-vim'
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'rdolgushin/gitignore.vim'
 Plugin 'easymotion/vim-easymotion'
-Plugin 'ryanoasis/vim-devicons'
 
 
 " All of your Plugins must be added before the following line
