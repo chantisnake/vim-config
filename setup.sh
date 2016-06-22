@@ -1,4 +1,6 @@
 sudo apt-get install vim
+sudo apt-get install gvim
+sudo apt-get install git
 cd ~
 git clone https://github.com/chantisnake/vim-config ~/.vim
 echo "source ~/.vim/gvim_config.vim" > .vimrc
