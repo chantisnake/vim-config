@@ -29,7 +29,7 @@ vmap u <Esc>
 vmap U <Esc>
 
 " use the shift enter to change line
-imap <S-CR> <Esc>o
+imap <C-CR> <Esc>o
 
 " use alt key to navigate without exit the insert mode
 imap <A-j> <Down>
