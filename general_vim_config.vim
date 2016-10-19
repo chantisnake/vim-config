@@ -14,8 +14,8 @@ vnoremap c "_c
 map ; $
 
 " quick way to exits the insert mode
-imap jj <Esc>
-imap kk <Esc>
+imap kj <Esc>
+imap jk <Esc>
 " quick way to enter visual mode
 imap vv <Esc>v
 

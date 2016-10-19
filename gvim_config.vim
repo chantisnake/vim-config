@@ -4,7 +4,7 @@ set nocompatible              " be iMproved, required
 if has('win32')
     let $DOTVIM='$USERPROFILE/vimfiles/'
 else
-    let $DOTVIM='$USERPROFILE/.vim/'
+    let $DOTVIM='~/.vim/'
 endif
 
 " open syntax highlighting
@@ -44,7 +44,6 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'chase/focuspoint-vim'
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'rdolgushin/gitignore.vim'
-Plugin 'vim-pandoc/vim-rmarkdown'
 Plugin 'easymotion/vim-easymotion'
 
 
@@ -202,7 +201,12 @@ imap <C-;> <Esc>[s1z=`]a
 " color scheme
 colorscheme focuspoint 
 " font
-set guifont=Consolas:h10:cANSI
+if has('win32')
+    set guifont=Consolas:h10:cANSI
+else
+    set guifont=DejaVu\ Sans\ Mono\ 11
+endif    
+    
 " hide tool bar
 :set guioptions-=m  "remove menu bar
 :set guioptions-=T  "remove toolbar
@@ -253,8 +257,9 @@ endfunction command! PluginRefreshUpdate call RefreshPluginsWithUpdate()
 :set fileencoding=utf-8
 
 " use direct-x render
-set rop=type:directx,gamma:1.0,contrast:0.5,level:1,geom:1,renmode:4,taamode:1
-
+if has('win32')
+    set rop=type:directx,gamma:1.0,contrast:0.5,level:1,geom:1,renmode:4,taamode:1
+endif
 
 " source the general file
 source $DOTVIM/general_vim_config.vim
