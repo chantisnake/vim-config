@@ -7,7 +7,7 @@ I don't see why you need to use my key binding, but anyway...
 ### one liner:
 windows:
 ```powershell
-iex (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/chantisnake/vim-config/master/setup.ps1')
+iwr 'https://raw.githubusercontent.com/chantisnake/vim-config/master/setup.ps1'| iex
 ```
 
 Linux:
